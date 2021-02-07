@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Secure Adda</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Secure Adda</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body{
+	font-family: 	"Brush Script MT,Lucida Handwriting";
+}
+.right{
+    margin-left: auto;
+    align-content: center;
+
+}
+.navbar{
+    background-color: #1B9CFC;
+ position: relative;
+}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    height: 110px;
+    width: 60%;
+    background-color: #1B9CFC;
+   text-align: center;
+    border-radius:10px;
+    border: none;
+}
+
+.navbar-brand {
+  left: 48%;
+  position: absolute;
+}
+.footer{
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    background-color: #2f2f2f;
+  }
+</style>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="/dashboard">
+    <img src="public/images/icon.png" alt="SecureAdda Icon" style="width:45px;">  
+  </a>
+   
+  <ul class="navbar-nav right">
+
+   <li class="nav-item text-light">
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle text-light" href="#" id="navbardrop" data-toggle="dropdown">
+      	<i class='fa fa-2x fa-user-circle'></i>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right">
+      	<p class="dropdown-header">Hi, User</p>
+        <a class="dropdown-item" href="/vault">My Vault</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item bg-danger text-white" href="/">Log Out</a>
+      </div>
+    </li>
+ 
+
+  </ul>
+</nav>
+</header>
+
+
+<br></br>
+<div class="text-center"><b><h1>Dashboard</h1></b></div>
+
+<hr>
+<br></br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class=" button col-md-4">
+
+            <a href="/passgen"><button type="button" class="btn btn-info"><b><i class="fa fa-2x fa-key" aria-hidden="true"></i>
+            	<br><br>Password Generator</b></button></a>
+        </div>
+       
+        <div class="col-md-2"></div>
+   
+        <div class=" button col-md-4">
+          <a href="/check">
+            <button type="button" class="btn btn-info"><b><i class="fa fa-2x fa-user-secret" aria-hidden="true"></i><br><br>Check My Password</b></button>
+
+        </div>
+        </a>
+    </div>
+
+</div>
+
+<br></br>
+<br></br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+
+        <div class=" button col-md-4">
+           <a href="/database">
+            <button type="button" class="btn btn-info"><b>
+            	<i class="fa fa-2x fa-database" aria-hidden="true"></i><br><br>Social Database</b></button></a>
+
+        </div>
+        <div class="col-md-2"></div>
+
+        <div class="button col-md-4">
+<a href='/vault'>
+            <button type="button"  class="btn btn-info"><b>
+            <i class="fa fa-2x fa-shield" aria-hidden="true"></i>
+            <br><br>Vault</b></button></a>
+
+        </div>
+    </div>
+
+</div>
+<br></br>
+<br></br>
+
+
+        <div class="container-fluid bg-dark footer text-center">
+        <div>
+             <a href="#" class="fa fa-2x fa-facebook"></a>&nbsp;&nbsp;
+             <a href="#" class="fa fa-2x fa-twitter"></a>&nbsp;&nbsp;
+             <a href="#" class="fa fa-2x fa-instagram"></a>&nbsp;&nbsp;
+             <a href="#" class="fa fa-2x fa-google"></a>
+        </div><br>
+        <div id='terms'>
+        <a href="#">Terms Of Use </a> · <a href="#">Privacy Policy</a></div>
+        <br><br>
+        <p class="text-light text-sm">&copy; 2020 SecureAdda<p>
+        </div>
+        </div>
+
+</body>
+</html>

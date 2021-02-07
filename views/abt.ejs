@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Secure Adda</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public/css/style.css">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            padding: 64px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both
+        }
+
+        .column-66 {
+            float: left;
+            width: 66.66666%;
+            padding: 30px;
+        }
+
+        .column-33 {
+            float: left;
+            width: 33%;
+            padding: 1px;
+        }
+
+
+
+
+        .button {
+            border: none;
+            color: white;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+        }
+
+      
+        .dot {
+            height: 8px;
+            width: 8px;
+            background-color: #0066ff;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .column-66,
+            .column-33 {
+                width: 100%;
+                text-align: center;
+            }
+
+            img {
+                margin: auto;
+            }
+            #more {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <!-- Clarity Section -->
+    <div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="/">
+    <img src="public/images/SecureAdda.png" alt="Secure Adda" style="width:120px;">
+  </a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Products</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Pricing</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Help</a>
+    </li>
+ 
+        <li class="nav-item">
+      <a class="nav-link" href="#">Contact</a>
+    </li>
+              <li class="nav-item">
+      <a class="nav-link" href="/about"><b>About</b></a>
+    </li>
+       
+  </ul>
+  
+  <ul class="navbar-nav right">
+    <li class="nav-item">
+      <a class="nav-link" href="/signup"><strong>Get Started</strong></a>
+
+    </li>
+   <li class="nav-item">
+      <a class="nav-link" href="/login">Log In <i class='fa fa-sign-in'></i> </a>
+    </li>
+  </ul>
+</nav>
+
+        <div class="row">
+            <div class="column-33">
+                <br /><br /><br />
+                <img src="public/images/p3.png" alt="App" width="400" height="380">
+            </div>
+            <div class="column-66">
+                <div style="text-align:center">
+                    <h1 style="color:#0066ff">About us</h1>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <br />
+                <p style="font-family:Arial">
+                    SecureAdda is a security aided platform that provides you the best security. A platform that accompanies you with high level security and saves you from bothering about your privacy.
+                    Get the most comprehensive, hassle free, easy-to-use platform. We serve the three layer security withholding the password manager. We believe in efficient setup globally to appreciate
+                    the variant work speed. Our main policy withstand your trust is our privacy!<span id="dots"><br /></span><span id="more">
+                        Our password management platform sets strong security standards with collaboration features designed to simplify password sharing and boost online productivity for everyone.
+                    </span>
+                </p>
+
+                <button onclick="myFunction()" id="myBtn" >Read more</button>
+            </div>
+            <div class="feature-box row equal-height align-right">
+                <div class="col-sm-6">
+                    <br /><br /><br />
+                    <h3><b>Our Features</b></h3>
+                    <p>
+                        User can create strong passwords and store them to our database for future use, We
+                        also provide provision to secure your passwords from data breaches by notifying you if any of
+                        your passwords got leaked in data breaches by using k-anonymity based modern algorithms to
+                        add more security to passwords, even a user can use this facility manually.
+
+                    </p>
+
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="public/images/p4.png" style="width:350px; height:350px; " float:right; />
+            </div>
+
+
+            <script>
+                function myFunction() {
+                    var dots = document.getElementById("dots");
+                    var moreText = document.getElementById("more");
+                    var btnText = document.getElementById("myBtn");
+
+                    if (dots.style.display === "none") {
+                        dots.style.display = "inline";
+                        btnText.innerHTML = "Read more";
+                        moreText.style.display = "none";
+                    } else {
+                        dots.style.display = "none";
+                        btnText.innerHTML = "Read less";
+                        moreText.style.display = "inline";
+                    }
+                }
+            </script>
+
+
+        </div>
+    </div>
+    </div>
+
+    <!-----------------team--------------------------->
+
+    <div class="container text-center">
+        <h1 style="color:#0066ff">Our Team</h1>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    
+        <br /><br /><br /><br />
+        <div class="container">
+  
+ 
+            <div class="row">
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  
+                    <img src="public/images/pic1.jpeg" alt="Vaibhav" class="photo" style="width:100%">
+                    <div class="caption">
+                       <h4 style=" text-align:center;" ><b>Vaibhav Haswani</b></h4>
+                       <p style=" text-align:center; color:grey;">Backend & Frontend</p>
+                    </div>
+                 
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  
+                    <img src="public/images/pic2.jpeg" alt="Gagan " class="photo" style="width:100%">
+                    <div class="caption">
+                       <h4 style=" text-align:center;" ><b>Gagan Deep Dogra</b></h4>
+                       <p style=" text-align:center; color:grey;">Frontend & Illustrator</p>
+                    </div>
+                 
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  
+                    <img src="public/images/pic3.jpeg" alt="Nandini" class="photo" style="width:100%">
+                    <div class="caption">
+                       <h4 style=" text-align:center;" ><b>Nandini Goel</b></h4>
+                       <p style=" text-align:center; color:grey;">Frontend</p>
+                    </div>
+                 
+                </div>
+              </div>
+              </div>
+           
+                              <br /><br />
+                              <div class="container">
+  
+ 
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                  <div class="col-md-4">
+                                    <div class="thumbnail">
+                                      
+                                        <img src="public/images/pic4.jpeg" alt="Shashwat"class="photo" style="width:100%">
+                                        <div class="caption">
+                                           <h4 style=" text-align:center;" ><b>Shashwat Anand</b></h4>
+                                           <p style=" text-align:center; color:grey;">Backend</p>
+                                        </div>
+                                     
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="thumbnail">
+                                      
+                                        <img src="public/images/pic5.jpeg"  class="photo"alt="Akshay " style="width:100%">
+                                        <div class="caption">
+                                           <h4 style=" text-align:center;" ><b>Akshay Kumar</b></h4>
+                                           <p style=" text-align:center; color:grey;">Frontend </p>
+                                        </div>
+                                     
+                              
+                                    </div> 
+                                    
+                                </div>    
+                                </div>   
+                                </div>             
+     </div>
+    </div>
+    
+
+    <!----------------------touch------------------------------>
+
+    <div class="container text-center">
+        <h2 class="text-center gett" style="color:#0066ff">Get in touch</h2>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+
+        
+        <div class="container text-center" >
+            <div class="boxer">
+        <div class="card card-shadow col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 reveal" >
+            <form action="" class="reveal-content" >
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="form-group">
+                            <br />
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send message</button><br/><br/>
+                    </div>
+                    <div class="col-md-5">
+                        <ul class="list-unstyled address-container">
+                            <li>
+                                <br /><br />
+                                
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                
+                                + 91 xxxxxxxxxx
+                            </li>
+                                                        <li>
+                                <br /><br />
+                                
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                
+                                support@secureadda.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+</div>
+        <!--------------------footer-------------------------->
+
+        </div>
+        <div class="container-fluid bg-dark footer text-center">
+        <div>
+             <a href="#" class="fa fa-2x fa-facebook"></a>&nbsp;&nbsp;
+             <a href="#" class="fa fa-2x fa-twitter"></a>&nbsp;&nbsp;
+             <a href="#" class="fa fa-2x fa-instagram"></a>&nbsp;&nbsp;
+             <a href="#" class="fa fa-2x fa-google"></a>
+        </div><br>
+        <div id='terms'>
+        <a href="#">Terms Of Use </a> · <a href="#">Privacy Policy</a></div>
+        <br><br>
+        <p class="text-light text-sm">&copy; 2020 SecureAdda<p>
+        </div>
+        </div>
+
+
+</body>
+</html>
